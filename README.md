@@ -3,7 +3,7 @@ Built using TailwindCSS for the first time!
 
 Libraries / Frameworks used: Typescript, React.js, TailwindCSS, CSS, HTML
 
-Live version [here](locchuong.dev)
+Live version [here](https://locchuong.dev)
 
 # Getting Started
 Run `npm install`
