@@ -143,9 +143,8 @@ function App() {
             </ul>
             <a
               className="align-center mt-8 flex w-fit items-center justify-center gap-1 text-neutral-400 transition-all hover:gap-2 hover:text-primary hover:underline"
-              href={PORTFOLIO_DATA.resumeLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/LocChuongResume.pdf"
+              download
             >
               View Full Resume
               <ArrowRightIcon className="h-4 w-4" />

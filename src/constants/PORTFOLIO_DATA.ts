@@ -7,7 +7,6 @@ export type Portfolio = {
   fullName: string;
   role: string;
   catchPhrase: string;
-  resumeLink: string;
   socials?: {
     email?: string;
     linkedInUrl?: string;
@@ -76,7 +75,6 @@ const PORTFOLIO_DATA: Portfolio = {
       tags: ["TypeScript", "React", "HTML", "SCSS", "C#", "SQL"],
     },
   ],
-  resumeLink: "https://google.com",
   projects: [
     {
       title: "Camp Wat Pa",
