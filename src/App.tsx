@@ -30,11 +30,11 @@ function App() {
   const ProjectsSectionIsActive = useMemo(() => activeSection === Section.Projects, [activeSection]);
 
   return (
-    <div className="relative z-[1] m-auto min-h-screen max-w-7xl px-12 lg:px-24">
+    <div className="relative z-[1] m-auto min-h-screen max-w-7xl px-6 md:px-12 lg:px-24">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="top-0 flex max-h-screen flex-1 flex-col justify-between pt-24 lg:sticky lg:pb-24">
           <div>
-            <h1 className="w-fit bg-backdrop font-bold text-white">{PORTFOLIO_DATA.fullName}</h1>
+            <h1 className="w-fit bg-backdrop text-4xl font-bold text-white md:text-5xl">{PORTFOLIO_DATA.fullName}</h1>
             <h2 className="mt-2 w-fit bg-backdrop text-white">{PORTFOLIO_DATA.role}</h2>
             <p className="mt-4 w-fit max-w-xs bg-backdrop text-neutral-400">{PORTFOLIO_DATA.catchPhrase}</p>
             <nav className="mt-16 hidden lg:block">
