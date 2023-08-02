@@ -11,7 +11,7 @@ interface ExperienceItemProps extends ComponentProps<"li"> {
 function ExperienceItem({ className, data, ...rest }: ExperienceItemProps) {
   return (
     <li
-      className={["relative grid h-fit grid-cols-8 gap-4 group-hover/list:[&:not(:hover)]:opacity-50", className].filter(Boolean).join(" ")}
+      className={["relative grid h-fit md:grid-cols-8 gap-4 group-hover/list:[&:not(:hover)]:opacity-50", className].filter(Boolean).join(" ")}
       {...rest}
     >
       <header className="col-span-2 pt-1 text-xs font-semibold tracking-wide text-neutral-400">

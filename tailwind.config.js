@@ -7,6 +7,9 @@ export default {
         primary: "#28e98c",
         backdrop: "#1f1f1f",
       },
+      aspectRatio: {
+        project: 120 / 70,
+      },
     },
   },
   plugins: [],

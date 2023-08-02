@@ -11,15 +11,15 @@ interface ProjectItemProps extends ComponentProps<"li"> {
 function ProjectItem({ className, data, ...rest }: ProjectItemProps) {
   return (
     <li
-      className={["group relative grid h-fit grid-cols-8 gap-4 group-hover/list:[&:not(:hover)]:opacity-50", className].filter(Boolean).join(" ")}
+      className={["group relative grid h-fit gap-4 md:grid-cols-8 group-hover/list:[&:not(:hover)]:opacity-50", className].filter(Boolean).join(" ")}
       {...rest}
     >
-      <div className="col-span-2 pt-1">
-        <div className="h-[70px] w-[120px] overflow-hidden rounded-md border-2 border-transparent group-hover:border-white/25 ">
+      <div className="order-2 col-span-2 min-w-[200px] pt-1 md:order-1 md:min-w-0">
+        <div className="aspect-project w-full overflow-hidden rounded-md border-2 border-transparent group-hover:border-white/25 ">
           <img src={data.imageSrc} className="h-full w-full transition-all group-hover:scale-110" />
         </div>
       </div>
-      <div className="col-span-6 flex flex-col gap-2">
+      <div className="order-1 col-span-6 flex flex-col gap-2 md:order-2">
         <a className="text-white" href={data.link} target="_blank" rel="noopener noreferrer">
           <span className="bg-backdrop text-white transition-all group-hover:text-primary">
             {data.title}

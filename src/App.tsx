@@ -30,14 +30,14 @@ function App() {
   const ProjectsSectionIsActive = useMemo(() => activeSection === Section.Projects, [activeSection]);
 
   return (
-    <div className="relative z-[1] m-auto min-h-screen max-w-7xl px-24">
-      <div className="flex justify-between gap-4">
-        <header className="sticky top-0 flex max-h-screen flex-1 flex-col justify-between py-24">
+    <div className="relative z-[1] m-auto min-h-screen max-w-7xl px-12 lg:px-24">
+      <div className="lg:flex lg:justify-between lg:gap-4">
+        <header className="top-0 flex max-h-screen flex-1 flex-col justify-between pt-24 lg:sticky lg:pb-24">
           <div>
             <h1 className="w-fit bg-backdrop font-bold text-white">{PORTFOLIO_DATA.fullName}</h1>
             <h2 className="mt-2 w-fit bg-backdrop text-white">{PORTFOLIO_DATA.role}</h2>
             <p className="mt-4 w-fit max-w-xs bg-backdrop text-neutral-400">{PORTFOLIO_DATA.catchPhrase}</p>
-            <nav className="mt-16">
+            <nav className="mt-16 hidden lg:block">
               <ul>
                 <li>
                   <a className="group flex w-fit items-center py-3" href="#about">
@@ -90,7 +90,7 @@ function App() {
               </ul>
             </nav>
           </div>
-          <ul className="flex flex-row gap-4">
+          <ul className="mt-8 flex flex-row gap-4">
             {PORTFOLIO_DATA.socials?.githubUrl && (
               <li>
                 <SocialLink href={PORTFOLIO_DATA.socials?.githubUrl} icon={<GithubIcon />} />
@@ -110,6 +110,7 @@ function App() {
         </header>
         <main className="flex min-h-screen flex-1 flex-col gap-24 py-24">
           <section className="mb-4" id="about" ref={AboutSectionRef}>
+            <p className="mb-8 w-fit bg-backdrop text-lg uppercase tracking-widest text-white">About</p>
             <div className="flex flex-col gap-4 ">
               <p className="bg-backdrop text-neutral-400">
                 From an early age, I was captivated by technology. From dismantling my first computer to building my{" "}
@@ -135,7 +136,7 @@ function App() {
           </section>
 
           <section className="flex flex-col" id="experience" ref={ExperienceSectionRef}>
-            <p className="mb-8 w-fit bg-backdrop text-lg text-white">Experience</p>
+            <p className="mb-8 w-fit bg-backdrop text-lg uppercase tracking-widest text-white">Experience</p>
             <ul className="group/list flex flex-col gap-12">
               {PORTFOLIO_DATA.experience.map((data) => (
                 <ExperienceItem key={data.position + data.description} data={data} />
@@ -152,7 +153,7 @@ function App() {
           </section>
 
           <section id="projects" ref={ProjectsContainerRef}>
-            <p className="mb-8 w-fit bg-backdrop text-lg text-white">Projects</p>
+            <p className="mb-8 w-fit bg-backdrop text-lg uppercase tracking-widest text-white">Projects</p>
             <ul className="group/list flex flex-col gap-12">
               {PORTFOLIO_DATA.projects.map((data) => (
                 <ProjectItem key={data.title} data={data} />
