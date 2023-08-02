@@ -1,3 +1,8 @@
+import SorterImage from "@assets/images/Sorter.png";
+import PathfinderImage from "@assets/images/Pathfinder.png";
+import CampWatPaImage from "@assets/images/CampWatPa.png";
+import StudentBoardImage from "@assets/images/StudentBoard.png";
+
 export type Portfolio = {
   fullName: string;
   role: string;
@@ -79,7 +84,7 @@ const PORTFOLIO_DATA: Portfolio = {
         "Volunteered as a Frontend Developer for Camp Wat Pa, a youth leadership program in La Puente, California. Proud to contribute to empowering the next generation of leaders through this transformative summer camp.",
       link: "https://campwatpa.org/",
       tags: ["TypeScript", "React", "HTML", "CSS"],
-      imageSrc: "/src/assets/images/CampWatPa.png",
+      imageSrc: CampWatPaImage,
     },
     {
       title: "Pathfinding Visualizer",
@@ -87,7 +92,7 @@ const PORTFOLIO_DATA: Portfolio = {
         "Designed and engineered an interactive web application that offers captivating visualizations of prominent pathfinding algorithms, including Dijkstra's, A* Search, BFS, DFS, and Recursive Sub-division.",
       link: "https://github.com/locchuong/Pathfinding-Visualizer",
       tags: ["JavaScript", "React", "HTML", "CSS"],
-      imageSrc: "/src/assets/images/Pathfinder.png",
+      imageSrc: PathfinderImage,
     },
     {
       title: "Sorting Visualizer",
@@ -95,7 +100,7 @@ const PORTFOLIO_DATA: Portfolio = {
         "Interactive web application that offers captivating visualizations of prominent sorting algorithms, including Bubble, Heap, Merge, Quick, Selection, and Shell sort.",
       link: "https://github.com/locchuong/sorting-visualizer",
       tags: ["JavaScript", "React", "HTML", "CSS"],
-      imageSrc: "/src/assets/images/Sorter.png",
+      imageSrc: SorterImage,
     },
     {
       title: "StudentBoard",
@@ -103,7 +108,7 @@ const PORTFOLIO_DATA: Portfolio = {
         "Dynamic full-stack web application offering users a comprehensive online learning platform. Implemented secure and streamlined OAuth 2.0 authorization, integrating Firebase's Authentication API, to guarantee robust user authentication and authorization mechanisms.",
       link: "https://github.com/locchuong/StudentBoard",
       tags: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Firebase"],
-      imageSrc: "/src/assets/images/StudentBoard.png",
+      imageSrc: StudentBoardImage,
     },
   ],
 };
