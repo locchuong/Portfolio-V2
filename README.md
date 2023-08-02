@@ -1,7 +1,7 @@
 # Portfolio Site V2
 Built using TailwindCSS for the first time, dabbled in writing a Canvas animation as well!
 
-Libraries / Frameworks used: Typescript, React.js, TailwindCSS, CSS, HTML
+Libraries / Frameworks used: Typescript, React.js, TailwindCSS, CSS, HTML, Firebase (Hosting)
 
 Live version [here](https://locchuong.dev)
 
