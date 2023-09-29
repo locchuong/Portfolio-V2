@@ -2,6 +2,7 @@ import SorterImage from "@assets/images/Sorter.png";
 import PathfinderImage from "@assets/images/Pathfinder.png";
 import CampWatPaImage from "@assets/images/CampWatPa.png";
 import StudentBoardImage from "@assets/images/StudentBoard.png";
+import SpaceXImage from "@assets/images/SpaceX Analytics.png";
 
 export type Portfolio = {
   fullName: string;
@@ -76,6 +77,14 @@ const PORTFOLIO_DATA: Portfolio = {
     },
   ],
   projects: [
+    {
+      title: "SpaceX Analytics",
+      description:
+        "Full Stack Web application designed in the style of SpaceX's official website.  Experience real-time updates on astronauts currently in space and track the International Space Station's location effortlessly.",
+      link: "https://github.com/locchuong/SpaceX-Analytics",
+      tags: ["TypeScript", "React", "HTML", "Tailwind CSS", "Firebase", "Cypress", "Vitest"],
+      imageSrc: SpaceXImage,
+    },
     {
       title: "Camp Wat Pa",
       description:
