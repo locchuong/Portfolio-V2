@@ -1,27 +1,23 @@
-# React + TypeScript + Vite
+# Portfolio Site V2
+Built using TailwindCSS for the first time, dabbled in writing a Canvas animation as well!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Libraries / Frameworks used: Typescript, React.js, TailwindCSS, CSS, HTML, Firebase (Hosting)
 
-Currently, two official plugins are available:
+Live version [here](https://locchuong.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+Run `npm install`
 
-## Expanding the ESLint configuration
+Configure Firebase through Firebase CLI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Update `src/constants/PORTFOLIO_DATA.ts` to your own portfolio data.
 
-- Configure the top-level `parserOptions` property like this:
+Update `src/App.tsx` About section
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Run `npm run dev`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Deployment
+
+Run `npm run build`
+
+Run `npx firebase deploy`
